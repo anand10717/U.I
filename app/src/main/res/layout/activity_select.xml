@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<agency.tango.materialintroscreen.parallax.ParallaxLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:custom="http://schemas.android.com/tools"
+    android:background="@android:color/transparent"
+    android:orientation="vertical"
+    android:paddingBottom="164dp">
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingTop="100dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Friend's MailId"
+        android:text=""
+        android:inputType="textEmailAddress"
+        android:textCursorDrawable="@drawable/text_cursor_cyan"
+        android:textSize="20sp"
+        android:id="@+id/frdmailid"
+
+        app:met_baseColor="@android:color/white"
+        app:met_floatingLabel="highlight"
+        app:met_maxCharacters="50"
+
+        app:met_helperText="example@mail.com"
+        app:met_helperTextColor="@color/colorAccent"
+
+        app:met_primaryColor="?colorAccent"
+        app:met_singleLineEllipsis="true"
+      />
+
+    <com.dd.processbutton.iml.ActionProcessButton
+        android:id="@+id/findfrd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Find"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_below="@+id/frdmailid"
+        android:layout_marginTop="20dp"
+        custom:pb_colorComplete="@color/green_complete"
+        custom:pb_colorNormal="@color/blue_normal"
+        custom:pb_colorPressed="@color/blue_pressed"
+        custom:pb_colorProgress="@color/purple_progress"
+        custom:pb_textComplete="Success"
+        custom:pb_textProgress="Loading" />
+
+    <TextView android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/findfrd"
+        android:id="@+id/frdName"
+        android:gravity="center"
+        android:textSize="45dp"
+        android:textStyle="italic">
+
+    </TextView>
+</RelativeLayout>
+</agency.tango.materialintroscreen.parallax.ParallaxLinearLayout>

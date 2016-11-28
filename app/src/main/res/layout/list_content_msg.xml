@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
+    android:orientation="vertical">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/lay">
+    <TextView
+        android:id="@+id/msg"
+        android:layout_width="wrap_content"
+        android:maxWidth="200dp"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:textSize="20dp" />
+    <TextView
+        android:id="@+id/name"
+        android:textColor="@color/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Txt"
+        android:textSize="10dp"
+        android:layout_below="@+id/msg"
+        android:layout_alignParentLeft="true"
+        />
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>
